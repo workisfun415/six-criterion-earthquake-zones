@@ -1,0 +1,61 @@
+CSEP EVALUATION REPORT - TURKEY
+Six-Criterion Consensus Detection Framework
+Ramakrishna Pasupuleti, ORCID: 0009-0008-8418-1430
+pycsep 0.8.0 | scipy 1.17.1
+Declustering: 5 days / 50 km
+=================================================================
+
+==============================================================================
+  TURKEY — YEAR-BY-YEAR DETECTION
+  Declustering: 5d / 50km  |  Detection radius: 100km
+==============================================================================
+    Year  M5.5+ Det    %  M6.0+ Det    %  M7.0+ Det  Key events
+  ------------------------------------------------------------------------------
+    2020      5   3  60%      2   2 100%      0   0  M6.8@17km, M6.6@71km
+    2021      1   1 100%      0   0   --      0   0  
+    2022      1   0   0%      0   0   --      0   0  
+    2023      7   1  14%      1   0   0%      1   0  
+    2024      2   1  50%      0   0   --      0   0  
+    2025      4   1  25%      3   0   0%      0   0  
+    2026      2   1  50%      0   0   --      0   0  
+  ------------------------------------------------------------------------------
+   TOTAL     22   8  36%      6   2  33%      1   0
+
+  Area fraction  : 5.7%
+  Detection rate : 36.4% (M>=5.5)
+  Skill score    : 0.325  (0=random, 1=perfect)
+
+=======================================================
+  MOLCHAN DIAGRAM DATA — TURKEY
+=======================================================
+  Top-N   Area%   M5.5 det%   M6.0 det%
+  ------------------------------------------
+      5     1.0%          27%          17%
+     10     2.0%          27%          17%
+     15     3.0%          36%          33%
+     20     4.0%          36%          33%
+     25     5.1%          36%          33%
+
+=======================================================
+  N-TEST (Poisson 95% confidence)
+=======================================================
+
+  M >= 5.5:
+    Expected : 1.1
+    Observed : 22
+    95% CI   : [0, 3]
+    delta1   : 1.0000
+    delta2   : 0.0000
+    Result   : FAIL
+
+  M >= 6.0:
+    Expected : 0.4
+    Observed : 6
+    95% CI   : [0, 2]
+    delta1   : 1.0000
+    delta2   : 0.0000
+    Result   : FAIL
+
+  NOTE: N-test FAIL is expected for alarm-based models.
+  Alarm models forecast zones, not Poisson rates.
+  The Molchan diagram is the primary skill metric.

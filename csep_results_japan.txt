@@ -1,0 +1,59 @@
+CSEP EVALUATION REPORT - JAPAN
+Six-Criterion Consensus Detection Framework
+Ramakrishna Pasupuleti, ORCID: 0009-0008-8418-1430
+pycsep 0.8.0 | scipy 1.17.1
+Declustering: 5 days / 150 km
+=================================================================
+
+==============================================================================
+  JAPAN — YEAR-BY-YEAR DETECTION
+  Declustering: 5d / 150km  |  Detection radius: 200km
+==============================================================================
+    Year  M5.5+ Det    %  M6.0+ Det    %  M7.0+ Det  Key events
+  ------------------------------------------------------------------------------
+    2020     21  19  90%      6   5  83%      0   0  M6.2@15km, M6.1@62km
+    2021     14  12  85%      8   7  87%      1   1  M7.3@40km, M6.8@30km
+    2022     12   8  66%      5   3  60%      0   0  M6.1@50km, M6.0@44km
+    2023     22  18  81%      9   8  88%      0   0  M6.0@122km, M6.2@22km
+  ------------------------------------------------------------------------------
+   TOTAL     69  57  82%     28  23  82%      1   1
+
+  Area fraction  : 9.7%
+  Detection rate : 82.6% (M>=5.5)
+  Skill score    : 0.807  (0=random, 1=perfect)
+
+=======================================================
+  MOLCHAN DIAGRAM DATA — JAPAN
+=======================================================
+  Top-N   Area%   M5.5 det%   M6.0 det%
+  ------------------------------------------
+      5     1.6%          42%          36%
+     10     3.1%          71%          64%
+     15     4.7%          71%          64%
+     20     6.2%          77%          71%
+     25     7.8%          81%          79%
+     30     9.4%          83%          82%
+
+=======================================================
+  N-TEST (Poisson 95% confidence)
+=======================================================
+
+  M >= 5.5:
+    Expected : 91.0
+    Observed : 69
+    95% CI   : [73, 110]
+    delta1   : 0.0099
+    delta2   : 0.9928
+    Result   : FAIL
+
+  M >= 6.0:
+    Expected : 34.6
+    Observed : 28
+    95% CI   : [24, 47]
+    delta1   : 0.1497
+    delta2   : 0.8887
+    Result   : PASS
+
+  NOTE: N-test FAIL is expected for alarm-based models.
+  Alarm models forecast zones, not Poisson rates.
+  The Molchan diagram is the primary skill metric.
